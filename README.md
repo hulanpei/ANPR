@@ -23,7 +23,7 @@ OpenCV, Machine Learning, Object Detection, Image Process, C++, Node.JS, MongoDB
 
 ## 專利
 
-因此專案本人申請了車牌歪斜矯正方法的[專利](https://github.com/hulanpei/Automatic-Number-Plate-Recognition/blob/master/resources/%E8%BB%8A%E7%89%8C%E6%AD%AA%E6%96%9C%E7%9F%AF%E6%AD%A3%E6%96%B9%E6%B3%95%202016-9-12.pdf)：
+因此專案本人申請了車牌歪斜矯正方法的專利：
 
 * 本發明係關於一種車牌辨識演算法，特別是車牌顏色與車身顏色相近的車牌歪斜矯正方法。
 * 車牌形狀雖為矩形，但若因拍攝角度造成車牌歪斜，會降低車牌辨識之識別率；此時，可藉由Hough轉換偵測出車牌框線進行車牌之歪斜矯正；但，若車牌與車身顏色相近時，不易偵測出車牌框線，此時必須借助車牌號碼本身。
