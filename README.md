@@ -2,13 +2,26 @@
 
 車牌辨識專案工作內容
 
-## 技術：
+* [主要技術](#主要技術)
+* [專利](#專利)
+* [車牌辨識主要演算法](#車牌辨識主要演算法)
+  * Plate Detection
+  * Char Analysis
+  * Plate Edges, Deskew
+  * Character Segmentation
+  * Optical Character Recognition (OCR)
+* [網站重要功能介紹](#網站重要功能介紹)
+  * 即時影像辨識顯示
+  * 紀錄查詢
+  * 收費管理
+
+## 主要技術
 
 ```
 OpenCV, Machine Learning, Object Detection, Image Process, C++, Node.JS, MongoDB.
 ```
 
-## 專利：
+## 專利
 
 因此專案本人申請了車牌歪斜矯正方法的[專利](https://github.com/hulanpei/Automatic-Number-Plate-Recognition/blob/master/resources/%E8%BB%8A%E7%89%8C%E6%AD%AA%E6%96%9C%E7%9F%AF%E6%AD%A3%E6%96%B9%E6%B3%95%202016-9-12.pdf)：
 
@@ -18,7 +31,7 @@ OpenCV, Machine Learning, Object Detection, Image Process, C++, Node.JS, MongoDB
 * 本發明的目的在於提供一種估算垂直方向歪斜角度之演算法，以提高車牌辨識之識別率。
 * 雖然車牌與車身顏色可能會相近，但車牌若無汙損，基本上車牌號碼本身顏色與背景顏色對比強烈，且所有字符幾乎皆呈高度大於寬度的長方體，因此可藉由此特性，估算出垂直方向歪斜的角度。
 
-## 車牌辨識主要演算法：
+## 車牌辨識主要演算法
 
 ### Plate Detection
 
@@ -46,7 +59,7 @@ OpenCV, Machine Learning, Object Detection, Image Process, C++, Node.JS, MongoDB
 
 ![](https://github.com/hulanpei/Automatic-Number-Plate-Recognition/blob/master/resources/deskew.png)
 
-###	Character Segmentation:
+###	Character Segmentation
 
 ![](https://github.com/hulanpei/Automatic-Number-Plate-Recognition/blob/master/resources/after_cleaning_AAB3010_1.jpg)
 
@@ -60,7 +73,7 @@ OpenCV, Machine Learning, Object Detection, Image Process, C++, Node.JS, MongoDB
 使用 Tesseract Open Source OCR Engine
 ```
 
-## 網站重要功能介紹：
+## 網站重要功能介紹
 
 ```
 ANPR Daemon 與 HTTP Server 之架構圖
@@ -68,7 +81,7 @@ ANPR Daemon 與 HTTP Server 之架構圖
 
 ![](https://github.com/hulanpei/Automatic-Number-Plate-Recognition/blob/master/resources/architecture.png)
 
-### 即時影像辨識
+### 即時影像辨識顯示
 
 * 提供即時影像顯示(最多支援4個車道影像顯示)，表格中提供車輛即時出入資料以及車牌縮圖
 
